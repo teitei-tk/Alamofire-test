@@ -13,6 +13,7 @@
 		6A08ECE61A23103500BB50FA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A08ECE51A23103500BB50FA /* Images.xcassets */; };
 		6A08ECE91A23103500BB50FA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A08ECE71A23103500BB50FA /* LaunchScreen.xib */; };
 		6A08ECF51A23103500BB50FA /* Alamofire_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A08ECF41A23103500BB50FA /* Alamofire_testTests.swift */; };
+		6AD4A8F41A231192008E6369 /* Alamofire.framework in Copy Framewroks */ = {isa = PBXBuildFile; fileRef = 6AD4A8EE1A231101008E6369 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +24,42 @@
 			remoteGlobalIDString = 6A08ECD81A23103500BB50FA;
 			remoteInfo = "Alamofire-test";
 		};
+		6AD4A8ED1A231101008E6369 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A08ECFE1A2310BB00BB50FA /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = Alamofire;
+		};
+		6AD4A8EF1A231101008E6369 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A08ECFE1A2310BB00BB50FA /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = AlamofireTests;
+		};
+		6AD4A8F11A231109008E6369 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A08ECFE1A2310BB00BB50FA /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = Alamofire;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6AD4A8F31A23116E008E6369 /* Copy Framewroks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6AD4A8F41A231192008E6369 /* Alamofire.framework in Copy Framewroks */,
+			);
+			name = "Copy Framewroks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6A08ECD91A23103500BB50FA /* Alamofire-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alamofire-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +72,7 @@
 		6A08ECEE1A23103500BB50FA /* Alamofire-testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alamofire-testTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A08ECF31A23103500BB50FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A08ECF41A23103500BB50FA /* Alamofire_testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alamofire_testTests.swift; sourceTree = "<group>"; };
+		6A08ECFE1A2310BB00BB50FA /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +96,7 @@
 		6A08ECD01A23103500BB50FA = {
 			isa = PBXGroup;
 			children = (
+				6A08ECFE1A2310BB00BB50FA /* Alamofire.xcodeproj */,
 				6A08ECDB1A23103500BB50FA /* Alamofire-test */,
 				6A08ECF11A23103500BB50FA /* Alamofire-testTests */,
 				6A08ECDA1A23103500BB50FA /* Products */,
@@ -112,6 +150,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6AD4A8E91A231100008E6369 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6AD4A8EE1A231101008E6369 /* Alamofire.framework */,
+				6AD4A8F01A231101008E6369 /* AlamofireTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +169,12 @@
 				6A08ECD51A23103500BB50FA /* Sources */,
 				6A08ECD61A23103500BB50FA /* Frameworks */,
 				6A08ECD71A23103500BB50FA /* Resources */,
+				6AD4A8F31A23116E008E6369 /* Copy Framewroks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6AD4A8F21A231109008E6369 /* PBXTargetDependency */,
 			);
 			name = "Alamofire-test";
 			productName = "Alamofire-test";
@@ -179,6 +228,12 @@
 			mainGroup = 6A08ECD01A23103500BB50FA;
 			productRefGroup = 6A08ECDA1A23103500BB50FA /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6AD4A8E91A231100008E6369 /* Products */;
+					ProjectRef = 6A08ECFE1A2310BB00BB50FA /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				6A08ECD81A23103500BB50FA /* Alamofire-test */,
@@ -186,6 +241,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6AD4A8EE1A231101008E6369 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 6AD4A8ED1A231101008E6369 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6AD4A8F01A231101008E6369 /* AlamofireTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AlamofireTests.xctest;
+			remoteRef = 6AD4A8EF1A231101008E6369 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6A08ECD71A23103500BB50FA /* Resources */ = {
@@ -232,6 +304,11 @@
 			isa = PBXTargetDependency;
 			target = 6A08ECD81A23103500BB50FA /* Alamofire-test */;
 			targetProxy = 6A08ECEF1A23103500BB50FA /* PBXContainerItemProxy */;
+		};
+		6AD4A8F21A231109008E6369 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			targetProxy = 6AD4A8F11A231109008E6369 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -405,6 +482,7 @@
 				6A08ECFA1A23103500BB50FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6A08ECFB1A23103500BB50FA /* Build configuration list for PBXNativeTarget "Alamofire-testTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +491,7 @@
 				6A08ECFD1A23103500BB50FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
