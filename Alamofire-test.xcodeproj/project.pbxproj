@@ -14,6 +14,7 @@
 		6A08ECE91A23103500BB50FA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A08ECE71A23103500BB50FA /* LaunchScreen.xib */; };
 		6A08ECF51A23103500BB50FA /* Alamofire_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A08ECF41A23103500BB50FA /* Alamofire_testTests.swift */; };
 		6AD4A8F41A231192008E6369 /* Alamofire.framework in Copy Framewroks */ = {isa = PBXBuildFile; fileRef = 6AD4A8EE1A231101008E6369 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6AD4A8F81A232880008E6369 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD4A8F71A232880008E6369 /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		6A08ECF31A23103500BB50FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A08ECF41A23103500BB50FA /* Alamofire_testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alamofire_testTests.swift; sourceTree = "<group>"; };
 		6A08ECFE1A2310BB00BB50FA /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		6AD4A8F71A232880008E6369 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 		6A08ECDB1A23103500BB50FA /* Alamofire-test */ = {
 			isa = PBXGroup;
 			children = (
+				6AD4A8F71A232880008E6369 /* SwiftyJSON.swift */,
 				6A08ECDE1A23103500BB50FA /* AppDelegate.swift */,
 				6A08ECE01A23103500BB50FA /* ViewController.swift */,
 				6A08ECE21A23103500BB50FA /* Main.storyboard */,
@@ -284,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AD4A8F81A232880008E6369 /* SwiftyJSON.swift in Sources */,
 				6A08ECE11A23103500BB50FA /* ViewController.swift in Sources */,
 				6A08ECDF1A23103500BB50FA /* AppDelegate.swift in Sources */,
 			);

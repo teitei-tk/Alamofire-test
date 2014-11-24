@@ -16,9 +16,14 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
 
         let apiRequest:Request = Alamofire.request(.GET, "http://api.ihackernews.com/page")
-        apiRequest.response(){
+
+        apiRequest.validate(statusCode: 200..<400).response(){
             request, response, data, error in
-            println(data)
+            if error == nil && data != nil {
+                return self.fetchApiData(data!)
+            }
+
+            return self.errorStack(error!)
         }
    }
 
@@ -27,6 +32,22 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    func errorStack(error:NSError) 
+    {
+        let errorCode:Int = error.code
+        let errorDescription:String = error.localizedDescription
 
+        println("-----------------------------------")
+        println("Code:\(errorCode)")
+        println("Description:\(errorDescription)")
+        println("-----------------------------------")
+    }
+
+    func fetchApiData(data:AnyObject) 
+    {
+        let jsonData:NSData = data as NSData
+        let json = JSON(data: jsonData)
+        println(json)
+    }
 }
 
