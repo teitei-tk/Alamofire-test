@@ -34,12 +34,9 @@ class ViewController: UIViewController {
 
     func errorStack(error:NSError) 
     {
-        let errorCode:Int = error.code
-        let errorDescription:String = error.localizedDescription
-
         println("-----------------------------------")
-        println("Code:\(errorCode)")
-        println("Description:\(errorDescription)")
+        println("Code:\(error.code)")
+        println("Description:\(error.localizedDescription)")
         println("-----------------------------------")
     }
 
